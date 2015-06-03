@@ -8,20 +8,17 @@ This little shell script might help you easier to run long QEMU commands.
 
    When used as a virtualizer, QEMU achieves near native performances by executing the guest code directly on the host CPU. QEMU supports virtualization when executing under the Xen hypervisor or using the KVM kernel module in Linux. When using KVM, QEMU can virtualize x86, server and embedded PowerPC, and S390 guests.
 
-
- # Download ans install on Fedora Linux / Debian GNU Linux / Ubuntu Linux / Linux Mint
+### Download ans install on Fedora Linux / Debian GNU Linux / Ubuntu Linux / Linux Mint
    sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev
 
- # Getting the source code
+## Getting the source code
    git clone git://git.qemu-project.org/qemu.git
 
- # install
+## install
     cd qemu/
    ./configure
     make
     sudo make install
 
- # Help
+### Help
   ./configure --help
-
-   
