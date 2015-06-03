@@ -1,7 +1,10 @@
 # QEMU_Runner
-This little shell script might help you easier to run long QEMU commands.
+   This little shell script might help you easier to run long QEMU commands.
 
-# What is QEMU ?
+
+
+---
+## What is QEMU ?
    QEMU is a generic and open source machine emulator and virtualizer.
 
    When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC). By using dynamic translation, it achieves very good performance.
@@ -12,13 +15,14 @@ This little shell script might help you easier to run long QEMU commands.
    sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev
 
 ## Getting the source code
-   git clone git://git.qemu-project.org/qemu.git
+   `<addr>` git clone git://git.qemu-project.org/qemu.git
 
 ## install
-    cd qemu/
-   ./configure
-    make
-    sudo make install
+
+   `<addr>` cd qemu/
+   `<addr>` ./configure
+   `<addr>`  make
+   `<addr>`  sudo make install
 
 ### Help
-  ./configure --help
+   `<addr>` ./configure --help
