@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # initialize QEMU command
-Cmd="qemu -m 750 -machine pc,accel=kvm -display curses -vga std -rtc base=localtime"
+Cmd="qemu -m 512 -machine pc,accel=kvm -display curses -vga std -rtc base=localtime"
 
 # option to disable default network interface
 NetOpts=" -net none"
