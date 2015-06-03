@@ -30,17 +30,17 @@
 
    ---
 ### Run Script
-The qemuRunner.bash script might make it easier to run long qemu commands. You can copy the script  to your home directory. Invoke the script with ./qemuRunner.bash followed by these arguments:
+The qemuRunner.bash script might make it easier to run long qemu commands. You can copy the script  to your home directory. Invoke the script with *./qemuRunner.bash* followed by these arguments:
 
 ```
    a=hda-image
-   required, specificies disk image to boot
+      required, specificies disk image to boot
    b=hdb-image
-   optional, specificies 2nd disk image
+      optional, specificies 2nd disk image
    c=cdrom-image
-   optional, specificies CD/DVD image
+      optional, specificies CD/DVD image
    d=hdd-image
-   optional, specificies 3rd disk image
+      optional, specificies 3rd disk image
    n=number
 ```
 optional, specificies number of network interfaces number can be 1 or 2
