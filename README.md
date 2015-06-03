@@ -49,8 +49,10 @@ cd
 boots from cd image
 Enter the arguments with no spaces around = so each argument is a single word.
 The script checks for bad arguments but does not check if image files exist, are readable, or are QEMU image files. Error messages are minimal.
+
 ### Examples:
 
+```
    ./qemuRunner.bash a=disk0.img
 starts qemu with the usual options, boots from disk0.img
    ./qemuRunner.bash a=disk0.img c=/pub/iso/winxp.iso cd
@@ -58,3 +60,4 @@ uses /pub/iso/winxp.iso for the cdrom image and boots from it ./qe.bash a=disk0.
 uses disk1.img for hdb and disk2.img for hdd
   ./qe.bash a=disk0.img n=1
 configures 1 network interface
+```
