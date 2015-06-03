@@ -19,11 +19,11 @@
    git clone git://git.qemu-project.org/qemu.git
 
 ### install
-
+   ```
    cd qemu/
    ./configure
    make
    sudo make install
-
+   ```
 ### Help
    ./configure --help
