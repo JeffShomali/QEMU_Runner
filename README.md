@@ -27,3 +27,34 @@
    ```
 ### Help
    ./configure --help
+
+   ---
+### Run Script
+The qemuRunner.bash script might make it easier to run long qemu commands. You can copy the script  to your home directory. Invoke the script with ./qemuRunner.bash followed by these arguments:
+
+```
+   a=hda-image
+   required, specificies disk image to boot
+   b=hdb-image
+   optional, specificies 2nd disk image
+   c=cdrom-image
+   optional, specificies CD/DVD image
+   d=hdd-image
+   optional, specificies 3rd disk image
+   n=number
+```
+optional, specificies number of network interfaces number can be 1 or 2
+
+cd
+boots from cd image
+Enter the arguments with no spaces around = so each argument is a single word.
+The script checks for bad arguments but does not check if image files exist, are readable, or are QEMU image files. Error messages are minimal.
+### Examples:
+
+   ./qemuRunner.bash a=disk0.img
+starts qemu with the usual options, boots from disk0.img
+   ./qemuRunner.bash a=disk0.img c=/pub/iso/winxp.iso cd
+uses /pub/iso/winxp.iso for the cdrom image and boots from it ./qe.bash a=disk0.img b=disk1.img  d=disk2.img
+uses disk1.img for hdb and disk2.img for hdd
+  ./qe.bash a=disk0.img n=1
+configures 1 network interface
