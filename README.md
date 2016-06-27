@@ -6,7 +6,7 @@
 
 ---
 ### What is QEMU ?
-   QEMU is a generic and open source machine emulator and virtualizer.
+   QEMU is a generic and open source machine emulator and virtualizer. Read more  [ here ] (https://en.wikipedia.org/wiki/QEMU?oldformat=true) 
 
    When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC). By using dynamic translation, it achieves very good performance.
 
